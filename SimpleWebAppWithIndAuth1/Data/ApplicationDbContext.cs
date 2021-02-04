@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using SimpleWebAppWithIndAuth1.Models;
 
 namespace SimpleWebAppWithIndAuth1.Data
 {
@@ -12,5 +13,6 @@ namespace SimpleWebAppWithIndAuth1.Data
             : base(options)
         {
         }
+        public DbSet<SimpleWebAppWithIndAuth1.Models.Movie> Movie { get; set; }
     }
 }
